@@ -1,0 +1,142 @@
+/* ChatStyles.css */
+
+.whatsapp-container {
+  display: flex;
+  height: 100vh;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #eae6df;
+}
+
+.user-list {
+  width: 250px;
+  background-color: #111b21;
+  color: white;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.user-list h6 {
+  font-weight: bold;
+  border-bottom: 1px solid #2e3b43;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+
+.user-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.user-list li {
+  padding: 8px 0;
+  border-bottom: 1px solid #2e3b43;
+}
+
+.user-list li.me {
+  color: #25D366;
+  font-weight: bold;
+}
+
+.chat-area {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background: url("https://i.ibb.co/Kw6dJ8v/whatsapp-bg.png") repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.chat-header {
+  background-color: #075e54;
+  color: white;
+  padding: 15px 20px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.chat-body {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.message-wrapper {
+  margin-bottom: 15px;
+  display: flex;
+}
+
+.message-wrapper.you {
+  justify-content: flex-end;
+}
+
+.message-wrapper.other {
+  justify-content: flex-start;
+}
+
+.message-box {
+  background-color: #dcf8c6;
+  padding: 10px 15px;
+  border-radius: 10px;
+  max-width: 60%;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+}
+
+.message-wrapper.you .message-box {
+  background-color: #e1ffc7;
+}
+
+.message-author {
+  font-size: 0.85rem;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+.message-text {
+  font-size: 1rem;
+  color: #000;
+}
+
+.message-time {
+  font-size: 0.75rem;
+  text-align: right;
+  color: #999;
+  margin-top: 5px;
+}
+
+.chat-footer {
+  padding: 10px 20px;
+  background-color: #f0f0f0;
+  display: flex;
+  align-items: center;
+}
+
+.message-input {
+  flex: 1;
+  border-radius: 25px;
+  border: none;
+  padding: 10px 15px;
+  margin-right: 10px;
+  font-size: 1rem;
+  outline: none;
+}
+
+.send-btn {
+  background-color: #128c7e;
+  border: none;
+  border-radius: 50%;
+  color: white;
+  font-size: 1.2rem;
+  width: 45px;
+  height: 45px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.send-btn:hover {
+  background-color: #075e54;
+}
